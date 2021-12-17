@@ -26,7 +26,7 @@
   align-items: stretch;
   flex-direction: row;
   position: relative; 
-  width: 300%;
+  width: 100%;
  }
 
  .button-counter {
@@ -34,7 +34,7 @@
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   width: 300%;
+   width: 100%;
  }
 
 .counter {
@@ -59,9 +59,26 @@ button {
 
  .new-tweet {
   display: flex;
+  width: 100%;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: space-between;
-  position: relative; 
-
  }
+#tweet-form {
+  flex: 1;
+  width: 100%;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.error h3 {
+  color: #ff1200;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+}

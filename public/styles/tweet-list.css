@@ -1,8 +1,9 @@
 .tweet {
   border-style: solid;
-  padding: 16px 8px;
-  margin: 16px 0;
+  padding: 16px;
+  margin: 20px;
   align-items: center;
+  border-radius: 5px;
 }
 
 .tweet-header {
@@ -17,7 +18,7 @@
   flex-direction: row;
   justify-content: space-between;
   border-top: 3px solid;
-  padding: 6px 0;
+  padding: 6px ;
 }
 
 .icons {
