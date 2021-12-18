@@ -4,6 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+//function used to escape text(XSS prevention)
 const escape2 = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -33,12 +34,12 @@ $(document).ready(function () {
         </article>
         `
   }
-
+//renderTweets function will add created tweets to the database in chronological order
   const renderTweets = function (tweets) {
     $("#tweets-container").empty();
     for (const tweet of tweets) {
       const newTweet = createTweetElement(tweet);
-      $(`#tweets-container`).prepend(newTweet);
+      $(`#tweets-container`).prepend(newTweet);    
     }
   }
 
@@ -72,7 +73,7 @@ $(document).ready(function () {
       textArea.focus();
       return error;
     }
-    $.post(
+    $.post(           //Ajax request
       "/tweets",
       $(this).serialize())
       .then(() => loadTweets())
@@ -82,6 +83,7 @@ $(document).ready(function () {
       })
   });
 
+//loadTweets function will load existing tweets from the database to the page
   const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
       .then((response) => renderTweets(response));
