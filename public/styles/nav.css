@@ -7,14 +7,37 @@ nav {
   background-color: #4056a1;
   color: #ffffff;
   font-family: "Bungee", cursive;
-
+  font-size: 0.8em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5em 0 1.5em;
+  padding: 0 1em 0 1em;
   z-index: 1;
+  gap: 20px;
  }
 
  header {
   z-index: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  nav {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  nav {
+    padding: 0 1.5em 0 1.5em;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 1em;
+  }
 }

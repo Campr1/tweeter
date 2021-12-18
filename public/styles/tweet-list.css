@@ -1,7 +1,7 @@
 .tweet {
   border-style: solid;
   padding: 16px;
-  margin: 20px;
+  margin: 20px 0;
   align-items: center;
   border-radius: 5px;
 }
