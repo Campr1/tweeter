@@ -16,3 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+!["Screenshot of error meassage when you try to tweet without typing anything"](https://github.com/Campr1/tweeter/blob/master/docs/error.png?raw=true)
+!["Screenshot of header"](https://github.com/Campr1/tweeter/blob/master/docs/header.png?raw=true)
+!["Screenshot of timeline"](https://github.com/Campr1/tweeter/blob/master/docs/timeline.png?raw=true)
