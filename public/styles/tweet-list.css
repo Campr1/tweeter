@@ -6,6 +6,16 @@
   border-radius: 5px;
 }
 
+img {
+  padding: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .tweet:hover {
   color: #a19a40;
   box-shadow:dimgray;
@@ -15,15 +25,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.user-info {
-  display: flex;
-  margin: 15px 0;
-}
-
-.user-info img {
-  margin-right: 15px;
 }
 
 .tweet-footer {

@@ -19,7 +19,10 @@ $(document).ready(function () {
     return `
           <article class="tweet">
           <header class="tweet-header">
-            <div>${escape2(tweet.user.name)}</div>
+          <div class="user-info">
+            <img src=${escape2(tweet.user.avatars)}>
+            <div class="tweet-header">${escape2(tweet.user.name)}</div>
+          </div>  
             <div class="handle">${escape2(tweet.user.handle)}</div>
           </header>
           <p>${escape2(tweet.content.text)}</p>
