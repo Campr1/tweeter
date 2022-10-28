@@ -24,6 +24,12 @@ nav {
   padding: 0 1em 0 1em ;
 }
 
+.fa-angle-double-down:hover {
+  top: 10px;
+  color: #c81212;
+  box-shadow:dimgray;
+}
+
  header {
   z-index: 0;
 }
